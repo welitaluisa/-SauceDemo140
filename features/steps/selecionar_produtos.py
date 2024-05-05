@@ -65,7 +65,7 @@ def step_impl(context):
 
 @then(u'exibe a mensagem de erro no login')
 def step_impl(context):
-   # validar a mensagem de erro
+    # validar a mensagem de erro
     assert context.driver.find_element(By.CSS_SELECTOR, "h3").text == "Epic sadface: Username and password do not match any user in this service"
 
     # teardown / encerramento
@@ -74,7 +74,7 @@ def step_impl(context):
 # Verifica a mensagem para o Scenario Outline
 @then(u'exibe a {mensagem} de erro no login')
 def step_impl(context, mensagem):
-   # validar a mensagem de erro
+    # validar a mensagem de erro
     assert context.driver.find_element(By.CSS_SELECTOR, "h3").text == mensagem
 
     # teardown / encerramento
